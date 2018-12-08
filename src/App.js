@@ -92,6 +92,7 @@ class App extends Component {
         input: this.state.input
       })
     })
+    .then(response => response.json())
     .then(response => {
       if (response) {
         fetch('https://vast-shore-53992.herokuapp.com/image', {
